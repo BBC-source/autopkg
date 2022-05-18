@@ -49,6 +49,8 @@
 				<string>%pathname%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
+				<key>architecture</key>
+				<string>%ARCH%</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
