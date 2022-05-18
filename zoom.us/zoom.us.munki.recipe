@@ -11,17 +11,12 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>zoom.us</string>
+		<string>Zoom</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>blocking_applications</key>
 			<array>
-				<string>ZoomUninstaller.app</string>
-				<string>ZMScreenshot.app</string>
 				<string>zoom.us.app</string>
-				<string>caphost.app</string>
-				<string>CptHost.app</string>
-				<string>Transcode.app</string>
 			</array>
 			<key>catalogs</key>
 			<array>
