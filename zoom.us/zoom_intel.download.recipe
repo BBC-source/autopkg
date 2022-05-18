@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of zoom.us.</string>
+	<string>Downloads the latest version of Zoom.</string>
 	<key>Identifier</key>
-	<string>com.github.bbc-source.download.zoom.us</string>
+	<string>com.github.bbc-source.download.zoom_intel</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -21,7 +21,7 @@
 				<key>filename</key>
 				<string>%NAME%.pkg</string>
 				<key>url</key>
-				<string>https://zoom.us/client/latest/Zoom.pkg?archType=arm64</string>
+				<string>https://zoom.us/client/latest/Zoom.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
