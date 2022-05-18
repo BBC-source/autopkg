@@ -2,18 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of ScreenConnect Client.</string>
+	<string>Downloads the latest version of ScreenConnect.</string>
 	<key>Identifier</key>
-	<string>com.github.bbc-source.download.ScreenConnectClient</string>
+	<string>com.github.bbc-source.download.ScreenConnect</string>
 	<key>Input</key>
 	<dict>
 		<key>APP_FILENAME</key>
 		<string>connectwisecontrol-0b9085ca08d57b61</string>
 		<key>NAME</key>
-		<string>ScreenConnect Client</string>
+		<string>ScreenConnect </string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
