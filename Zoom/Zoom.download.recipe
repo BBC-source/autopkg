@@ -8,8 +8,6 @@
 	<string>com.github.bbc-source.download.zoom</string>
 	<key>Input</key>
 	<dict>
-		<key>ARCH</key>
-		<string>arm64</string>
 		<key>NAME</key>
 		<string>Zoom</string>
 	</dict>
