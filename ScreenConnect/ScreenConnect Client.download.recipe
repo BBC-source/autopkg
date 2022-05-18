@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of ScreenConnect Client.</string>
+	<key>Identifier</key>
+	<string>com.github.bbc-source.download.ScreenConnectClient</string>
+	<key>Input</key>
+	<dict>
+		<key>APP_FILENAME</key>
+		<string>connectwisecontrol-0b9085ca08d57b61</string>
+		<key>NAME</key>
+		<string>ScreenConnect Client</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.pkg</string>
+				<key>url</key>
+				<string>https://support.bethlehem.church/Bin/ConnectWiseControl.ClientSetup.pkg?h=support.bethlehem.church&amp;p=8041&amp;k=BgIAAACkAABSU0ExAAgAAAEAAQCvg6n%2B07W1Y%2Bp1dX5%2FtUWJD6afmbabIeR2Vr8F8LrHSriJAdSImkGrs6rMpld8AP6LPeKtDYRagBjxqb6iF4ArADLtJTEpYvmBAbJKKH6awgCAx82lAt7EFpnK4pX1TxbhH1twxDs922bw08Cz2pbnyS2WDev1ULJVoAWyPU7l39B94BX0Kpl9UPBce9nZhsDm%2F1druCIxFXkXzQinfgitmX3J14tEBXBCq90DZe0Vfb0vdEUt5%2BSzwroRDm5%2FKyjMAhp4GW4pzT7YT7rs4pux2zStp73JnTTNqnBbi5uXvE84uuj0qn30Nz7U6AD5BYgMVRT3%2F2bstyMygBsh7OPj&amp;e=Access&amp;y=Guest&amp;t=&amp;c=&amp;c=&amp;c=&amp;c=&amp;c=&amp;c=&amp;c=&amp;c=</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%pathname%</string>
+				<key>requirement</key>
+				<string>identifier "com.screenconnect.client.access" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = K8M3XDZV9Y</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
+	</array>
+</dict>
+</plist>
