@@ -23,7 +23,7 @@
 				<key>filename</key>
 				<string>%NAME%.pkg</string>
 				<key>url</key>
-				<string>https://support.bethlehem.church/Bin/ConnectWiseControl.ClientSetup.pkg?h=support.bethlehem.church&p=8041&k=BgIAAACkAABSU0ExAAgAAAEAAQCvg6n%2B07W1Y%2Bp1dX5%2FtUWJD6afmbabIeR2Vr8F8LrHSriJAdSImkGrs6rMpld8AP6LPeKtDYRagBjxqb6iF4ArADLtJTEpYvmBAbJKKH6awgCAx82lAt7EFpnK4pX1TxbhH1twxDs922bw08Cz2pbnyS2WDev1ULJVoAWyPU7l39B94BX0Kpl9UPBce9nZhsDm%2F1druCIxFXkXzQinfgitmX3J14tEBXBCq90DZe0Vfb0vdEUt5%2BSzwroRDm5%2FKyjMAhp4GW4pzT7YT7rs4pux2zStp73JnTTNqnBbi5uXvE84uuj0qn30Nz7U6AD5BYgMVRT3%2F2bstyMygBsh7OPj&e=Access&y=Guest&t=&c=&c=&c=&c=&c=&c=&c=&c=</string>
+				<string>https://support.bethlehem.church/Bin/ConnectWiseControl.ClientSetup.pkg?h=support.bethlehem.church&amp;p=8041&amp;k=BgIAAACkAABSU0ExAAgAAAEAAQCvg6n%2B07W1Y%2Bp1dX5%2FtUWJD6afmbabIeR2Vr8F8LrHSriJAdSImkGrs6rMpld8AP6LPeKtDYRagBjxqb6iF4ArADLtJTEpYvmBAbJKKH6awgCAx82lAt7EFpnK4pX1TxbhH1twxDs922bw08Cz2pbnyS2WDev1ULJVoAWyPU7l39B94BX0Kpl9UPBce9nZhsDm%2F1druCIxFXkXzQinfgitmX3J14tEBXBCq90DZe0Vfb0vdEUt5%2BSzwroRDm5%2FKyjMAhp4GW4pzT7YT7rs4pux2zStp73JnTTNqnBbi5uXvE84uuj0qn30Nz7U6AD5BYgMVRT3%2F2bstyMygBsh7OPj&amp;e=Access&amp;y=Guest&amp;t=&amp;c=&amp;c=&amp;c=&amp;c=&amp;c=&amp;c=&amp;c=&amp;c=</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
