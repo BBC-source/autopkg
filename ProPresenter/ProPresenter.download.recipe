@@ -10,6 +10,8 @@
 	<dict>
 		<key>NAME</key>
 		<string>ProPresenter</string>
+		<key>DL_URL</key>
+        <string>https://renewedvision.com/</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
