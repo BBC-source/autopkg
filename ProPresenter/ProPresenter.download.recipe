@@ -17,7 +17,7 @@
 	<array>
 		<dict>
 			<key>Arguments</key>
-			</dict>
+			<dict>
 				<key>re_pattern</key>
 				<string>(?P&lt;DYNAMIC_URL&gt;/mac/ProPresenter[0-9_\.]+\.zip)</string>
 				<key>url</key>
