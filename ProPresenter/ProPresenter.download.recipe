@@ -10,8 +10,6 @@
 	<dict>
 		<key>NAME</key>
 		<string>ProPresenter</string>
-		<key>DL_URL</key>
-        <string>https://renewedvision.com/</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -20,10 +18,10 @@
 		<dict>
 			<key>Arguments</key>
 			</dict>
+				<key>re_pattern</key>
+				<string>(?P&lt;DYNAMIC_URL&gt;/mac/ProPresenter[0-9_\.]+\.zip)</string>
 				<key>url</key>
 				<string>https://renewedvision.com/propresenter/#download</string>
-				<key>re_pattern</key>
-				<string>(?P&lt;DYNAMIC_URL&gt;downloads/propresenter/mac/ProPresenter[0-9_\.]+\.zip)</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLTextSearcher</string>
@@ -32,7 +30,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>url</key>
-				<string>https://renewedvision.com/%DYNAMIC_URL%</string>
+				<string>https://renewedvision.com/downloads/propresenter%DYNAMIC_URL%</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
