@@ -11,21 +11,9 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>Google Drive</string>
+		<string>GoogleDrive</string>
 		<key>pkginfo</key>
 		<dict>
-			<key>blocking_applications</key>
-			<array>
-				<string>Google Drive Helper (GPU).app</string>
-				<string>Google Drive Helper.app</string>
-				<string>Google Drive.app</string>
-				<string>Google Drive Helper (Plugin).app</string>
-				<string>FinderHelper.app</string>
-				<string>Google Drive Helper (Renderer).app</string>
-				<string>Google Docs.app</string>
-				<string>Google Sheets.app</string>
-				<string>Google Slides.app</string>
-			</array>
 			<key>catalogs</key>
 			<array>
 				<string>production</string>
@@ -33,7 +21,7 @@
 			<key>description</key>
 			<string> </string>
 			<key>developer</key>
-			<string>Google LLC</string>
+			<string>Google</string>
 			<key>display_name</key>
 			<string>Google Drive</string>
 			<key>name</key>
@@ -47,18 +35,56 @@
 	<key>ParentRecipe</key>
 	<string>com.github.bbc-source.download.GoogleDrive</string>
 	<key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>pkg_path</key>
-				<string>%pathname%</string>
-				<key>repo_subdirectory</key>
-				<string>%MUNKI_REPO_SUBDIR%</string>
-			</dict>
-			<key>Processor</key>
-			<string>MunkiImporter</string>
-		</dict>
-	</array>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack</string>
+                <key>flat_pkg_path</key>
+                <string>%pathname%/GoogleDrive.pkg</string>
+            </dict>
+            <key>Processor</key>
+            <string>FlatPkgUnpacker</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/payload</string>
+                <key>pkg_payload_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack/GoogleDrive_x86_64.pkg/Payload</string>
+            </dict>
+            <key>Processor</key>
+            <string>PkgPayloadUnpacker</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>info_path</key>
+                <string>%RECIPE_CACHE_DIR%/payload/Google Drive.app/Contents/Info.plist</string>
+                <key>plist_keys</key>
+                <dict>
+                    <key>CFBundleVersion</key>
+                    <string>version</string>
+                    <key>LSMinimumSystemVersion</key>
+                    <string>min_os_version</string>
+                </dict>
+            </dict>
+            <key>Processor</key>
+            <string>PlistReader</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>source_pkg</key>
+                <string>%pathname%/GoogleDrive.pkg</string>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/GoogleDrive-%version%.pkg</string>
+            </dict>
+            <key>Processor</key>
+            <string>PkgCopier</string>
+        </dict>
+    </array>
 </dict>
 </plist>
