@@ -82,7 +82,7 @@
         </dict>
         <dict>
             <key>Processor</key>
-            <string>com.github.BBC-source.autopkg/Processor/MunkiPkginfoReceiptsEditor</string>
+            <string>com.github.BBC-source.autopkg.Processor/MunkiPkginfoReceiptsEditor</string>
         </dict>
 	</array>
 </dict>
