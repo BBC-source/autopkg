@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of ScreenConnect Client and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.bbc-source.munki.ScreenConnect</string>
+	<string>com.github.bbc-source.munki.ScreenConnectClient</string>
 	<key>Input</key>
 	<dict>
 		<key>APP_FILENAME</key>
@@ -13,7 +15,7 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>ScreenConnect</string>
+		<string>ScreenConnect Client</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>blocking_applications</key>
@@ -22,14 +24,14 @@
 			</array>
 			<key>catalogs</key>
 			<array>
-				<string>production</string>
+				<string>testing</string>
 			</array>
 			<key>description</key>
 			<string> </string>
 			<key>developer</key>
 			<string>ConnectWise, Inc</string>
 			<key>display_name</key>
-			<string>ScreenConnect</string>
+			<string>ScreenConnect Client</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
@@ -39,7 +41,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.bbc-source.download.ScreenConnect</string>
+	<string>com.github.bbc-source.download.ScreenConnectClient</string>
 	<key>Process</key>
 	<array>
 		<dict>
