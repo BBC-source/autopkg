@@ -21,7 +21,7 @@
 				<key>re_pattern</key>
 				<string>(?P&lt;DYNAMIC_URL&gt;/mac/ProPresenter[0-9_\.]+\.zip)</string>
 				<key>url</key>
-				<string>https://renewedvision.com/propresenter/#download</string>
+				<string>https://renewedvision.com/propresenter/download</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLTextSearcher</string>
@@ -30,7 +30,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>url</key>
-				<string>https://renewedvision.com/downloads/propresenter%DYNAMIC_URL%</string>
+				<string>https://renewedvision.com/downloads/propresenter/mac/%DYNAMIC_URL%</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
