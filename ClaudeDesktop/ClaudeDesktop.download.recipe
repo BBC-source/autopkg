@@ -31,11 +31,11 @@
                 <string>%API_URL%</string>
 
                 <key>re_pattern</key>
-                <string>"version":"([^"]+)"</string>
+                <string>"version"\s*:\s*"([^"]+)"</string>
 
                 <key>result_output_var_name</key>
                 <string>version</string>
-            </dict>
+            </dict> 
         </dict>
 
         <dict>
@@ -47,7 +47,7 @@
                 <string>%API_URL%</string>
 
                 <key>re_pattern</key>
-                <string>"url":"([^"]+)"</string>
+                <string>"url"\s*:\s*"([^"]+)"</string>
 
                 <key>result_output_var_name</key>
                 <string>download_url</string>
