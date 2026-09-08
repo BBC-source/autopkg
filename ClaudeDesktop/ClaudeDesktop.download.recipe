@@ -6,7 +6,7 @@
     <string>Downloads the latest version of Claude Desktop for macOS.</string>
 
     <key>Identifier</key>
-    <string>local.download.ClaudeDesktop</string>
+    <string>com.github.bbc-source.download.ClaudeDesktop</string>
 
     <key>Input</key>
     <dict>
